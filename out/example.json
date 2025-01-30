@@ -1,0 +1,29 @@
+{
+  "steps": [
+    {
+      "action": "open_browser",
+      "description": "Launch the Chrome browser"
+    },
+    {
+      "action": "navigate",
+      "description": "Navigate to Amazon India",
+      "url": "https://www.amazon.in"
+    },
+    {
+      "action": "search",
+      "description": "Search for mousepads",
+      "selector": "id:twotabsearchtextbox",
+      "input_text": "mousepads"
+    },
+    {
+      "action": "click",
+      "description": "Click search button",
+      "selector": "id:nav-search-submit-button"
+    },
+    {
+      "action": "click",
+      "description": "Click on the first search result",
+      "selector": "css:div[data-component-type='s-search-result'] h2 a"
+    }
+  ]
+}

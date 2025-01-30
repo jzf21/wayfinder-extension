@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Web Navigation Helper",
+  "version": "1.0",
+  "description": "Highlights and guides through web navigation steps",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
